@@ -1,0 +1,159 @@
+html, body {
+  padding: 0px;
+  margin: 0px;
+  background: #222;
+  font-family: 'Ubuntu', sans-serif;
+  color: #FFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h4 {
+  margin-top: 2%;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+a {
+  color: white;
+}
+
+.container {
+  max-width: 300px;
+  min-height: 400px;
+  margin: auto;
+  position: relative;
+  margin-top: 80px;
+}
+
+input[name="switch"] {
+  display: none;
+  position: absolute;
+  top: -60px;
+}
+
+label.l_switch {
+  position: absolute;
+  top: -90px;
+  display: inline-block;
+  transition: all 0.5s;
+  font-size: 32px;
+  border: 2px solid #FFF;
+  border-radius: 3px;
+  padding: 0px 10px;
+  user-select: none;
+}
+
+input[name=switch]:checked + label {
+  color: #465;
+  border: 2px solid #465;
+  border-radius: 3px;
+}
+
+#switch_register + label {
+  right: 0px;
+}
+
+.form {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  background: #444;
+  top: 0px;
+  left: 0px;
+  padding: 30px 20px;
+  border-radius: 3px;
+  display: flex;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+  border: 2px solid #333;
+}
+
+#switch_register + label + .form,
+#switch_login + label + .form {
+  animation: 1s moveout;
+  background: #555;
+  z-index: 1;
+  transform: translateX(40px) translateY(-40px);
+}
+
+#switch_register:checked + label + .form,
+#switch_login:checked + label + .form {
+  animation: 1s movein, 1s top infinite;
+  animation-delay: 0s, 0.5s;
+  z-index: 0;
+  transform: translateX(0px) translateY(0px);
+  background: #465;
+}
+
+#switch_register:checked + label + .form *,
+#switch_login:checked + label + .form * {
+  opacity: 1;
+}
+
+#switch_register + label + .form *,
+#switch_login + label + .form * {
+  opacity: 0;
+  transition: 1s all;
+}
+
+@keyframes top {
+  from, to {
+    z-index: 2;
+  }
+}
+@keyframes moveout {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-160px);
+  }
+  100% {
+    transform: translateX(40px) translateY(-40px);
+  }
+}
+@keyframes movein {
+  0% {
+    transform: translateX(40px) translateY(-40px);
+  }
+  50% {
+    transform: translateX(160px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+/*-------| Form Styles |-------*/
+.form div {
+  flex: 1;
+  margin: auto;
+}
+
+.form h2 {
+  margin: 0px 0px 20px 0px;
+}
+
+.form label {
+  display: block;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  border: 2px solid #333;
+  border-radius: 3px;
+}
+
+.form button {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  background: #666;
+  border: 2px solid #333;
+  border-radius: 3px;
+  color: white;
+  font-weight: 600;
+}
