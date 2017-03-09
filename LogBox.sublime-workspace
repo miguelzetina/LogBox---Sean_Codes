@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"back",
+				"background-color"
+			],
+			[
 				"margin",
 				"margin-top"
 			]
@@ -15,7 +19,7 @@
 			"file": "LogBox.html",
 			"settings":
 			{
-				"buffer_size": 1084,
+				"buffer_size": 1085,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -145,15 +149,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1084,
+						"buffer_size": 1085,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								322,
-								322
+								618,
+								618
 							]
 						],
 						"settings":
@@ -166,7 +170,7 @@
 						"translation.y": 666.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -188,8 +192,8 @@
 						"selection":
 						[
 							[
-								2240,
-								2240
+								754,
+								754
 							]
 						],
 						"settings":
@@ -200,10 +204,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3885.0,
+						"translation.y": 1121.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
